@@ -71,8 +71,19 @@ span {font-weight:bold;}
 #ac_footer .acl .logo_f .sticker-img {background-image: url(../images/layout/logo_f.png);}
 #ac_footer .acl address {display: block;font-style: normal;text-align:center;clear:both; }
 #ac_footer .acl #copyright {font-weight: bold;}
-/*#ac_footer address {display: block;font-style: normal;text-align:center;clear:both; }
-#ac_footer #copyright {font-weight: bold;}*/
-/*#ac_footer .sticker {position:absolute;width:44px;height:44px;left:0;bottom:0;}
-#ac_footer .logo_f .sticker-img {background-image: url(../images/layout/logo_f.png);}
-*/
+
+@media all and (max-width:1000px) {
+  .auto {width:100%;}
+}
+@media all and (max-width:960px) {
+  .mobile {display:none;}
+}
+@media all and (max-width:640px) {
+
+}
+@media all and (max-width:480px) {
+
+}
+@media all and (max-width:320px) {
+
+}
