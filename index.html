@@ -27,9 +27,9 @@
 		<script type="text/javascript" src="js/sticker.min.js"></script>
 		<script type="text/javascript">
 			$(document).ready(function() {
-				// window.onload = function() {
-				//             Sticker.init('.sticker');
-			 //        		}
+				window.onload = function() {
+				            Sticker.init('.sticker');
+			        		}
 		 $(".yu_logo").on("mouseenter",function(e){
 			 	var color = Math.round(Math.random()*256*256*256);
 
@@ -74,7 +74,8 @@
 		</div>
 			<!-- mainHead end  -->
 		<footer id="footer">
-			<div class="auto clearFix">
+			<div class="addWrap auto clearFix">
+				<div class="sticker logo_f"></div>
 				<address>			
 						ⓒ 2015 <span id="copyright">CHO YOON U</span> ALL Rights Reserved.				
 				</address>

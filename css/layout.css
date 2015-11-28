@@ -22,8 +22,12 @@ span {font-weight:bold;}
 .mobile:hover {border-bottom:solid 3px #0088cc;text-decoration: none;}
 
 #footer {width:100%;height:64px;padding:20px 0;border-top: solid 1px  #e8e8e8;}
-#footer address {display: block;font-style: normal;text-align:center;clear:both; }
-#footer #copyright {font-weight: bold;}
+#footer .addWrap  {position:relative;width:450px;text-align:center;}
+#footer .addWrap .sticker {position:absolute;width:44px;height:44px;right:0;top:-12px;}
+#footer .addWrap .logo_f .sticker-img {background-image: url(../images/layout/logo_f.png);}
+#footer .addWrap address {display: block;font-style: normal;text-align:center;clear:both; }
+#footer .addWrap #copyright {font-weight: bold;}
+
 
 /*aboutMe*/
 #am_header {position:relative;width:100%;height:100px;}
@@ -61,10 +65,14 @@ span {font-weight:bold;}
 #ct_header .cth .contactT {font-size:25px;padding:10px;text-align:center;border-bottom:solid 1px #e8e8e8;}
 
 /*footer 공통*/
-#ac_footer .acl {width:1000px;height:64px;padding:20px 0;border-top:solid 1px #e8e8e8;}
-/*#ac_footer .acl {border-top: solid 1px #e8e8e8;}*/
-#ac_footer address {display: block;font-style: normal;text-align:center;clear:both; }
-#ac_footer #copyright {font-weight: bold;}
-
-
-
+#ac_footer .acWrap {width:1000px;height:64px;padding:20px 0;border-top:solid 1px #e8e8e8;}
+#ac_footer .acWrap .acl {position:relative;width:450px;}
+#ac_footer .acl .sticker {position:absolute;width:44px;height:44px;right:0;top:-12px;}
+#ac_footer .acl .logo_f .sticker-img {background-image: url(../images/layout/logo_f.png);}
+#ac_footer .acl address {display: block;font-style: normal;text-align:center;clear:both; }
+#ac_footer .acl #copyright {font-weight: bold;}
+/*#ac_footer address {display: block;font-style: normal;text-align:center;clear:both; }
+#ac_footer #copyright {font-weight: bold;}*/
+/*#ac_footer .sticker {position:absolute;width:44px;height:44px;left:0;bottom:0;}
+#ac_footer .logo_f .sticker-img {background-image: url(../images/layout/logo_f.png);}
+*/

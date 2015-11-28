@@ -12,9 +12,9 @@
 	<link rel="stylesheet" href="css/jquery-ui.css" />
 	<!-- <link rel="stylesheet" href="css/type.css" /> -->
 	<link rel="shortcut icon" href="images/layout/favicon.ico">
-
 	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
 	<script type="text/javascript" src="js/typed.js"></script>
+	<script type="text/javascript" src="js/sticker.min.js"></script>
 	<script type="text/javascript" src="js/jquery-ui.js"></script>
 
 	<script type="text/javascript">
@@ -123,7 +123,9 @@
 							$(".realTime").text(apm+"  "+hour+":"+min);
 							clearInterval(timer);
 						}, 1000);	
-				
+					window.onload = function() {
+				            Sticker.init('.sticker');
+			        		}	
 					});	
 	</script>
 	<style>
@@ -301,11 +303,14 @@
 	<!-- auto end -->
 </section>
 <footer id="ac_footer">
+	<div class="acWrap auto clearFix">
 		<div class="acl auto">
-			<address>			
-				ⓒ 2015 <span id="copyright">CHO YOON U</span> ALL Rights Reserved.				
-			</address>
+				<div class="sticker logo_f"></div>
+				<address>			
+						ⓒ 2015 <span id="copyright">CHO YOON U</span> ALL Rights Reserved.				
+				</address>
 		</div>
-	</footer>
+	</div>
+</footer>
 </body>
 </html>

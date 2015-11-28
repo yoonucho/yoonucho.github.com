@@ -11,6 +11,16 @@
 	<link rel="stylesheet" href="css/contact.css" />
 	<link rel="shortcut icon" href="images/layout/favicon.ico">
 	<title>Contact</title>
+	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="js/sticker.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+				window.onload = function() {
+				            Sticker.init('.sticker');
+			        		}
+			        	});
+	</script>
+
 </head>
 <body>
 	<header id="ct_header">
@@ -95,12 +105,15 @@
 		</div>
 		<!-- auto end -->
 	</div>
-	<footer id="ac_footer">
+<footer id="ac_footer">
+	<div class="acWrap auto clearFix">
 		<div class="acl auto">
-			<address>			
-				ⓒ 2015 <span id="copyright">CHO YOON U</span> ALL Rights Reserved.				
-			</address>
+				<div class="sticker logo_f"></div>
+				<address>			
+						ⓒ 2015 <span id="copyright">CHO YOON U</span> ALL Rights Reserved.				
+				</address>
 		</div>
-	</footer>
+	</div>
+</footer>
 </body>
 </html>
