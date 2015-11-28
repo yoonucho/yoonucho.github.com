@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="HandheldFriendly" content="true">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="stylesheet" href="css/layout.css" />
+	<link rel="stylesheet" href="css/aboutMe.css" />
+	<link rel="stylesheet" href="css/jquery-ui.css" />
+	<!-- <link rel="stylesheet" href="css/type.css" /> -->
+	<link rel="shortcut icon" href="images/layout/favicon.ico">
+
+	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="js/typed.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready (function(e){
+			setTimeout(function(){
+				$('.abContainer .name .left').show( "drop",{direction: "up"} ,200);
+				},200);
+				setTimeout(function(){
+					$('.abContainer .name .right').show("drop",{direction: "down"} ,400);
+					$("#type2").typed({
+						stringsElement: $('#name02'),
+						typeSpeed: 80,
+						loop: false,
+						contentType: 'html', // or text
+						// defaults to false for infinite loop
+						loopCount: false, 
+				})
+				},500); 
+				setTimeout(function(){
+					$('.abContainer .pic .left').show("drop",{direction: "up"} ,600);
+				},700); 
+				setTimeout(function(){
+					$('.abContainer .pic .right').fadeIn(700);
+					$('#pic_s').fadeIn(800);
+				},900); 
+				setTimeout(function(){
+					$('.abContainer .age .left').show("drop",{direction: "up"} ,1000);
+				},1100);
+				setTimeout(function(){
+					$('.abContainer .age .right').show("drop",{direction: "down"} ,1000*1+200);
+					$("#type6").typed({
+						stringsElement: $('#age02'),
+						typeSpeed: 100,
+						loop: false,
+						contentType: 'html', // or text
+						// defaults to false for infinite loop
+						loopCount: false,      
+				})
+				},1000*1+300);
+				setTimeout(function(){
+					$('.abContainer .skill .left').show("drop",{direction: "up"} ,1000*1+400);
+				},1000*1+500);
+				setTimeout(function(){
+					$('.abContainer .skill .right').show("drop",{direction: "down"} ,1000*1);
+					$("#type8").typed({
+						stringsElement: $('#skill02'),
+						typeSpeed: 30,					
+						loop: false,
+						contentType: 'html', // or text
+						// defaults to false for infinite loop
+						loopCount: false,       
+					})
+				},1000*2);
+				setTimeout(function(){
+					$('.abContainer .career .left').show("drop",{direction: "up"} ,1000*2+200);
+		
+				},1000*2+300);
+				setTimeout(function(){
+					$('.abContainer .career .right').show("drop",{direction: "down"} ,1000*2+500);
+					$("#type10").typed({
+						stringsElement: $('#career02'),
+						// startDelay: 2000,
+						typeSpeed: 30,
+						loop: false,
+						contentType: 'html', // or text
+						// defaults to false for infinite loop
+						loopCount: false,      
+					})
+				},1000*3);
+				setTimeout(function(){
+					$('.abContainer .contact .left').show("drop",{direction: "up"} ,1000*5);
+				},1000*6+200);
+				setTimeout(function(){
+					$('.abContainer .contact .right').show("drop",{direction: "down"} ,1000*4);
+					$('#contact_s').fadeIn(1000*4+200),
+					$("#type12").typed({
+						stringsElement: $('#contact02'),
+						startDelay: 500,
+						typeSpeed: 300,
+						loop: false,
+						contentType: 'html', // or text
+						// defaults to false for infinite loop
+						loopCount: false,
+				          
+					});
+				},1000*6+300);				
+				 /* realTime */
+				function addZero(num) {
+					if(num<10){
+						return "0"+num;
+					} else {
+						return ""+num;
+					}
+				}
+					var timer = setInterval(function(){
+							var date = new Date();
+							var hour = date.getHours();
+							var min = addZero(date.getMinutes());
+							var apm ;
+							if(hour>12){
+								hour= hour-12;
+								apm="오후"
+							} else {
+								apm="오전"
+							}
+							$(".realTime").text(apm+"  "+hour+":"+min);
+							clearInterval(timer);
+						}, 1000);	
+				
+					});	
+	</script>
+	<style>
+        /* code for animated blinking cursor */
+        .typed-cursor{
+            opacity: 1;
+            font-weight: 100;
+            -webkit-animation: blink 0.7s infinite;
+            -moz-animation: blink 0.7s infinite;
+            -ms-animation: blink 0.7s infinite;
+            -o-animation: blink 0.7s infinite;
+            animation: blink 0.7s infinite;
+        }
+        @-keyframes blink{
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
+        @-webkit-keyframes blink{
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
+        @-moz-keyframes blink{
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
+        @-ms-keyframes blink{
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
+        @-o-keyframes blink{
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
+    </style>
+	<title>About me</title>
+ </head>
+<body>
+<header id="am_header">
+	<div class="amh auto clearFix">
+		<div class="logoAm ">
+			<img class="logo_s " src="images/layout/logo_s.png" alt="쪼꼬미로고">
+			<a href="javascript:window.location.reload();"><span class="am">About Me</span></a>
+		</div>
+		<ul class="util">
+			<li><a href="index.html"><img src="images/layout/home.png" alt="home" title="home"></a></li>
+			<li><a href="aboutMe.html"><img src="images/layout/aboutMe.png" alt="aboutMe" title="aboutMe"></a></li>
+			<li><a href="portfolio.html"><img src="images/layout/portfolio.png" alt="portfolio" title="portfolio"></a></li>
+			<li><a href="contact.html"><img src="images/layout/contact.png" alt="contact" title="contact" ></a></li>
+		</ul>
+		<ul class="util_b">
+				<li>
+					<a class="back" href="#" onClick="history.back(); return false;"><img  src="images/layout/back.png" alt="뒤로가기" title="back"></a>
+				</li>
+				<li>
+					<a class="refresh" href="javascript:window.location.reload();"><img  src="images/layout/refresh.png" alt="새로고침" title="refresh"></a>
+				</li>
+			</ul>
+		<p class="aboutT auto">About Me</p>
+	</div>
+</header>
+<!-- header end -->
+<section id="aboutMe">
+	<div class="abContainer auto">
+		<div class="name">
+			<div class="left">
+				<div id="name01">
+					<p>이름</p>
+				</div> 
+				<div class="realTime"></div>	
+			</div>		
+			<div class="right">
+				<div id="name02">
+					<p>조윤우</p>
+				</div>
+				<span id="type2"></span>
+				<img class="dc" src="images/main/dc.png" alt="">
+				<div class="realTime"></div>
+			</div>	
+		</div>
+		<!-- name end -->
+		<div class="pic">
+			<div class="left ">
+				<div id="pic01">
+					<p>사진</p>
+				</div> 
+				<div class="realTime"></div>
+			</div>		
+			<div class="right ">
+				<div id="pic02">
+					<img id="pic_s" src="images/main/pic_s.jpg" alt="">
+				</div>
+					<span id="type4"></span>	
+					<div class="rd">
+						<div class="realTime"></div>	
+						<img class="dc" src="images/main/dc_w.png" alt="">
+					</div>
+			</div>	
+		</div> 
+		<!-- pic end -->
+		<div class="age">
+			<div class="left">
+				<div id="age01">
+					<p>나이</p>
+				</div> 
+				<div class="realTime"></div>
+			</div>		
+			<div class="right">
+				<div id="age02">
+					<p>100110 ???</p>
+					<!-- 38세..나이가 조금 많은 관계로 2진수로 표현하였습니다.;_;-->
+				</div>
+				<span id="type6"></span>
+				<div class="realTime"></div>
+				<img class="dc" src="images/main/dc.png" alt="">
+			</div>
+		<!-- age end-->
+		<div class="skill">
+			<div class="left">
+					<div id="skill01">
+						<p>보유스킬</p>
+					</div> 
+					<div class="realTime"></div>
+			</div>		
+			<div class="right">
+				<div id="skill02">
+					<p>  HTML, CSS, jQuery,mediaQuery,웹표준<br />    Photoshop,Illustrator,Dreamweaver</p>
+				</div>
+					<span id="type8"></span>
+					<div class="realTime"></div>
+					<img class="dc" src="images/main/dc.png" alt="">
+			</div>	
+		</div> 
+		<!-- skill end -->
+		<div class="career">
+			<div class="left ">
+				<div id="career01">
+					<p>이력</p>
+				</div> 
+				<div class="realTime"></div>
+			</div>		
+			<div class="right">
+				<div id="career02">
+					<p>2015년 12월 10일 <br />  인천직업능력교육원 <br />  webDesign &amp; Publisher 과정 수료 예정<br/>  2015년 7월 21일 <br />  인천직업능력교육원 <br />  webDesign &amp; Publisher 과정 입교</p>
+				</div>
+				<span id="type10"></span>
+				<div class="realTime"></div>
+				<img class="dc" src="images/main/dc.png" alt="">
+			</div>	
+		</div>
+		<!-- career end -->
+		<div class="contact">
+			<div class="left">
+				<div id="contact01">
+					<p>연락처</p>
+				</div> 
+				<div class="realTime"></div>
+			</div>		
+			<div class="right">
+				<a id="contact_s" href="contact.html"><img src="images/main/contact_s.jpg" alt=""></a>
+				<div id="contact02">
+					<p>이미지를 클릭해주세요.</p>
+				</div>
+				<span id="type12"></span>
+				<div class="realTime"></div>
+				<img class="dc" src="images/main/dc.png" alt="">
+			</div>	
+		</div>
+		<!-- contact end -->
+	</div>
+	<!-- auto end -->
+</section>
+<footer id="ac_footer">
+		<div class="acl auto">
+			<address>			
+				ⓒ 2015 <span id="copyright">CHO YOON U</span> ALL Rights Reserved.				
+			</address>
+		</div>
+	</footer>
+</body>
+</html>

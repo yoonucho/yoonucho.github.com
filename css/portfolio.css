@@ -1,0 +1,10 @@
+
+#mainContents {position: relative;width:100%;padding:30px; }
+#mainContents .portfolio {width:1000px;text-align:center;height:800px;}
+#mainContents .portfolio .porCon {float:left;width:24.5%;margin:2px;}
+#mainContents .portfolio .porCon .por {display: block;height:190px;padding:2px;}
+#mainContents .portfolio .porCon .por img {width:100%;}
+
+.fancybox-title-over-wrap {width: 100%;padding: 0;}
+.fancybox-title-over-wrap > div {padding: 40px;}
+
