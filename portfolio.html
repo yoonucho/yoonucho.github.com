@@ -28,7 +28,7 @@
 		<script type="text/javascript" src="js/sticker.min.js"></script>
 		<script type="text/javascript">
 			$(document).ready(function() {
-				$(".por").fancybox({	
+				$(".por1").fancybox({	
 							padding:5,
 							openEffect :'fade',
 							nextEffect: 'fade',
@@ -53,7 +53,21 @@
 					               }
 						   }   
 						}); 
-			
+						$(".por2") .attr('rel', 'group')
+								    .fancybox({
+							        beforeLoad: function() {
+							            var el, id = $(this.element).data('title-id');
+							            if (id) {
+							                el = $('#' + id);
+							            
+							                if (el.length) {
+							                    this.title = el.html();
+							                }
+							            }
+							        }
+				    		});
+								   
+
 				window.onload = function() {
 						            Sticker.init('.sticker');
 					        		}
@@ -74,31 +88,58 @@
 				<li><a href="aboutMe.html"><img src="images/layout/aboutMe.png" alt="aboutMe" title="aboutMe"></a></li>
 				<li><a href="portfolio.html"><img src="images/layout/portfolio.png" alt="portfolio" title="portfolio"></a></li>
 				<li><a href="contact.html"><img src="images/layout/contact.png" alt="contact" title="contact" ></a></li>
-				<!-- <li><a href="#" onClick="history.back(); return false;"><img src="images/layout/ar_36.png" alt="뒤로가기" ></a></li> -->
 				</ul>
 				<a class="back" href="#" onClick="history.back(); return false;"><img  src="images/layout/back_62.png" alt="뒤로가기" title="back"></a>
 				<p class="portfolioT auto">Portfolio</p>
 			</div>
 	</header>
 <!-- header end -->
-		<div id="mainContents">
-			<ul class="portfolio auto clearFix">
-				<li class="porCon">
-					<a class="por" title ="아날로그아날로그아날로그아날로그아날로그아날로그아날로그" rel="group" href="images/main/porCon1_b.jpg"><img src="images/main/porCon1_s.jpg" alt="" /></a>
-				</li> 
-				<li class="porCon">
-					<a class="por" title ="수채화느낌" rel="group" href="images/main/porCon2_b.jpg"><img src="images/main/porCon2_s.jpg" alt="" /></a>
-				</li> 
-				<li class="porCon">
-					<a class="por" title ="빛효과" rel="group" href="images/main/porCon3_b.jpg"><img src="images/main/porCon3_s.jpg" alt="" /></a>
-					
-				</li> 
-				<li class="porCon">
-					<a class="por" title ="수묵화" rel="group" href="images/main/porCon4-3_b.jpg"><img src="images/main/porCon4-3_s.jpg" alt="" /></a>
-					
-				</li> 
-			</ul>
-		</div>
+
+		<section id="mainContents">
+			<article id="mainCon_top">
+				<ul class="portfolio auto clearFix">
+				<h3>Design</h3>	
+					<li class="design">
+						<a class="por1" title ="아날로그" rel="group" href="images/main/porCon1_b.jpg"><img src="images/main/porCon1_s.jpg" alt="" /></a>
+					</li> 
+					<li class="design">
+						<a class="por1" title ="수채화느낌" rel="group" href="images/main/porCon2_b.jpg"><img src="images/main/porCon2_s.jpg" alt="" /></a>
+					</li> 
+					<li class="design">
+						<a class="por1" title ="빛효과" rel="group" href="images/main/porCon3_b.jpg"><img src="images/main/porCon3_s.jpg" alt="" /></a>
+						
+					</li> 
+					<li class="design">
+						<a class="por1" title ="수묵화" rel="group" href="images/main/porCon4_b.jpg"><img src="images/main/porCon4_s.jpg" alt="" /></a>
+						
+					</li> 
+				</ul>
+			</article>	
+			<article id="mainCon_bottom">
+				<ul class="portfolio auto clearFix">
+				<h3>Publishing</h3>	
+					<li class="publishing">
+						<a class="por2" data-title-id="title-1" rel="group" href="images/main/HDA_b.jpg"><img src="images/main/HDA_s.jpg" alt="" /></a>
+						<div id="title-1" class="hidden">
+						    HDA 메인입니다. <a href="../HDA/index.html" target="_blank">해당페이지로 이동합니다.</a>
+						</div>
+					</li> 
+					<li class="publishing">
+						<a class="por2" data-title-id="title-2" rel="group" href="images/main/skoolooks_b.jpg"><img src="images/main/skoolooks_s.jpg" alt="" /></a>
+						<div id="title-2" class="hidden" >스쿨룩스 메인입니다. <a href="../skoolooks/index.html" target="_blank">해당페이지로 이동합니다.</a>
+					</li> 
+					<li class="publishing">
+						<a class="por2" data-title-id="title-3" rel="group" href="images/main/edible_b.jpg"><img src="images/main/edible_s.jpg" alt="" /></a>
+						<div id="title-3" class="hidden">에더블 모바일 메인입니다.<a href="../mobile/index.html" target="_blank">해당페이지로 이동합니다.</a>
+					</li> 
+					<li class="publishing">
+						<a class="por2" data-title-id="title-4" rel="group" href="images/main/zoocoffee_b.jpg"><img src="images/main/zoocoffee_s.jpg" alt="" /></a>
+						<div id="title-4" class="hidden">주커피 메인입니다.<a href="../zoocoffee/index.html" target="_blank">해당페이지로 이동합니다.</a>
+						
+					</li> 
+				</ul>
+			</article>
+		</section>
 		<footer id="ac_footer">
 			<div class="acWrap auto clearFix">
 				<div class="acl auto">

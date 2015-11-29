@@ -2,7 +2,7 @@
 #aboutMe {/*font-family:"NamsanM","sans-serif";font-size:16px;color:#333;line-height:1.5;*/
 position: relative;font-size:15px;line-height:1.5;}
 
-#aboutMe .abContainer {position:relative;width:1000px;height:1500px;padding:30px 0;background: url("../images/main/aboutC.png"),url("../images/main/aboutmeBg.jpg");
+#aboutMe .abContainer {position:relative;width:1000px;height:1300px;padding:30px 0;background: url("../images/main/aboutC.png"),url("../images/main/aboutmeBg.jpg");
 background-position: 30% 30%, center;background-repeat:no-repeat;}
 /*#aboutMe p {display:none;position:absolute;padding-left:10px;}*/
 #aboutMe .abContainer .left p {position:absolute;padding-left:10px;}

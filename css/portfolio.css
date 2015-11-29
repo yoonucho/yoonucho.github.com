@@ -1,10 +1,18 @@
+#mainContents {position: relative;width:100%;padding:30px;height:780px; }
+#mainContents .portfolio {width:1000px;text-align:center;}
+#mainContents h3 {text-align:left;color:#757575;}
 
-#mainContents {position: relative;width:100%;padding:30px; }
-#mainContents .portfolio {width:1000px;text-align:center;height:800px;}
-#mainContents .portfolio .porCon {float:left;width:24.5%;margin:2px;}
-#mainContents .portfolio .porCon .por {display: block;height:190px;padding:2px;}
-#mainContents .portfolio .porCon .por img {width:100%;}
+#mainCon_top .portfolio .design {float:left;width:24.5%;margin:2px;padding:30px 0;}
+#mainCon_top .portfolio .design .por {display: block;height:190px;padding:2px;}
+#mainCon_top .portfolio .design .por img {width:100%;}
+
+#mainCon_bottom .portfolio .publishing {float:left;width:24.5%;margin:2px;padding:30px 0;}
+#mainCon_bottom .portfolio .publishing .por {display: block;height:190px;padding:2px;}
+#mainCon_bottom .portfolio .publishing .por img {width:100%;}
 
 .fancybox-title-over-wrap {width: 100%;padding: 0;}
 .fancybox-title-over-wrap > div {padding: 40px;}
+
+.hidden {display: none; }
+.fancybox-title a {color: #fff;}
 
