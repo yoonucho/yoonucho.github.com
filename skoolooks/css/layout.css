@@ -1,0 +1,41 @@
+/* common */
+body {font-family:"맑은 고딕","Malgun Gothic","돋움";font-size:12px;line-height:1.5;color:#333;}
+.auto {width:946px;margin:auto;position:relative;}
+li {list-style:none;}
+a {text-decoration:none;color:#333;}
+* {margin:0;padding:0;}
+address {font-style:normal;}
+
+/* header */
+#header {width:100%;overflow:hidden;position:relative;z-index:3;background:#fff;}
+#header:after{content:"";display:block;width:100%;position:absolute;top:97px;}
+#header .subBg { width:100%;height:50px;top:70px;position:absolute;background:#d9d9d9;}
+
+#gnb {position:relative;}
+#gnb .logo {float:left;}
+#gnb .menu {float:left;margin:20px;}
+#gnb .menu  li {float:left;padding-left:40px;font-weight:bold; } 
+
+#gnb .login {position:absolute;z-index:2;top:20px;right:200px;font-size:12px;padding:0 5px;}
+#gnb .login > li {float:left;padding:0 15px;}
+#gnb .login > li .sub {float:left;margin-top:38px;margin-right:-155px;font-size:11px;}
+#gnb .login > li .sub .sub1 {float:left;padding-right:15px;}
+#gnb .login > li > a {padding:0 5px;}
+
+#gnb .lg > a {display:block;}
+#gnb .lg .sub .sub1 a {display:block;padding-left:6px;}
+
+
+#gnb .sns {position:absolute;top:13px;right:125px;}
+#gnb .sns li {float:left;padding:0 5px;}
+
+
+#footer {width:100%;position:relative;background:#f7f8f8;height:70px;color:#a8a8a8;}
+#footer .footer_logo {float:left;padding:3px 3px; }
+#footer  address {display:block;float:left;padding-top:13px ;padding-left:40px;}
+#footer .footerM {position:absolute;font-size:10px;right:0;padding-top:30px;}
+#footer .footerM li {float:left;position:relative;}
+#footer .footerM li:after {content:"";display:block;width:1px;height:8px;background:#a8a8a8;position:absolute;left:0;top:6px;}
+
+#footer .footerM li a {display:block;padding:0 5px;color:#a8a8a8;}
+#footer .footerM li:first-child:after {display:none;}

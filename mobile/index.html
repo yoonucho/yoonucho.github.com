@@ -1,0 +1,161 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="HandheldFriendly" content="true">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<title>에더블</title>
+	<link rel="stylesheet" href="css/normalize.css" />
+	<link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/jquery.bxslider.css" />	
+	<link rel="stylesheet" href="css/layout.css" />
+	<link rel="stylesheet" href="css/main.css" />
+	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(e){
+			$("#mainVisual .visualList").bxSlider({});
+			$("#header .btnAll").on("click",function(e){
+				if($(this).hasClass("close")){
+				$("#gnb").stop().animate({left:0},500,"easeOutQuint");
+				$(this).find("img").attr({src:"images/layout/gnb_off.gif"});
+				$(this).removeClass("close");
+			} else {
+				$("#gnb").stop().animate({left:"-70%"},500,"easeOutQuint");
+				$(this).find("img").attr({src:"images/layout/gnb_on.gif"});
+				$(this).addClass("close");
+				$("#gnb nav > ul > li .sub").slideUp(100);						
+				}
+			return false;
+			})
+			$("#gnb nav > ul > li > a").on("click",function(e){
+				if($(this).parent().hasClass("close")){
+					$(this).parent().find(".sub").slideDown(500);
+					$(this).parent().removeClass("close")
+				} else {
+					$(this).parent().find(".sub").slideUp(500);
+					$(this).parent().addClass("close")
+				}
+				return false;
+			})
+			$(window).on("resize",function(e){
+				$("#gnb").height($("body").height()-60);
+			})
+			$(window).trigger("resize");	
+		
+		})
+	</script>
+</head>
+<body>
+	<header id="header">
+		<h1 class="logo"><a href=""><img src="images/layout/logo.gif" alt="에더블" /></a></h1>
+		<a href="" class="btnAll close"><img src="images/layout/gnb_on.gif" alt="전체메뉴 열기" /></a>
+		<a href="" class="btnBack"><img src="images/layout/back.gif" alt="뒤로가기" /></a>
+	</header>
+	<div id="gnb">
+		<nav>
+			<ul>
+				<li class="close"><a href="">About EIA</a>
+					<ul class="sub">
+						<li><a href="">Welcome from the Founder</a></li>
+						<li><a href="">Academy Mission</a></li>
+						<li><a href="">The Campus</a></li>
+						<li><a href="">Contact Us</a></li>
+					</ul>
+				</li>
+				<li class="close"><a href="">Admissions</a>
+					<ul class="sub">
+						<li><a href="">Apply to EIA</a></li>
+						<li><a href="">Request Information</a></li>
+						<li><a href="">Visit EIA</a></li>
+						<li><a href="">International Applicant</a></li>
+					</ul>
+				</li>
+				<li class="close"><a href="">Academics</a>
+					<ul class="sub">
+						<li><a href="">Academic Overview</a></li>
+						<li><a href="">Curriculum</a></li>
+						<li><a href="">Edible Schoolyard</a></li>
+						<li><a href="">Fairmont Private Schools</a></li>
+						<li><a href="">International Program</a></li>
+						<li><a href="">Faculty & Staff</a></li>
+					</ul>
+				</li>
+				<li class="close"><a href="">Project G</a>
+					<ul class="sub">
+						<li><a href=""></a></li>
+						<li><a href=""></a></li>
+						<li><a href=""></a></li>
+					</ul>
+				</li>
+				<li class="close"><a href="">Student Life</a>
+					<ul class="sub">
+						<li><a href=""></a></li>
+						<li><a href=""></a></li>
+						<li><a href=""></a></li>
+					</ul>
+				</li>
+				<li class="close"><a href="">News & Event</a>
+					<ul class="sub">
+						<li><a href=""></a></li>
+						<li><a href=""></a></li>
+						<li><a href=""></a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+	</div>
+	<section id="mainVisual">
+		<h2 class="blind"></h2>
+		<ul class="visualList">
+			<li><img src="images/main/visual01.jpg" alt="" /></li>
+			<li><img src="images/main/visual02.jpg" alt="" /></li>
+			<li><img src="images/main/visual03.jpg" alt="" /></li>
+		</ul>
+	</section>
+	<section id="mainContents">
+		<a href="" class="btnSlogan"><img src="images/main/slogan.gif" alt="에더블 인터내셔날 아카데미" /></a>
+		<div class="mainMenu clearFix">
+			<ul>
+				<li><a href=""><img src="images/main/menu01.gif" alt="아카데미미션" /></a></li>
+				<li><a href=""><img src="images/main/menu02.gif" alt="에더블 야드" /></a></li>
+			</ul>
+		</div>
+		<div class="banner clearFix">
+			<ul>
+				<li><img src="images/main/banner_media.jpg" alt="" /></li>
+				<li><img src="images/main/banner_vacation.jpg" alt="" /></li>
+				<li><img src="images/main/banner_calender.jpg" alt="" /></li>
+				<li><img src="images/main/banner_bulletin.jpg" alt="" /></li>
+			</ul>
+		</div>
+		<a href="" class="btnKakao"><img src="images/main/kakao.gif" alt="" /></a>
+	</section>
+	<footer id="footer">
+		<a href="tel:032-560-8006" class="btnTel">
+			<span>Contactus</span> <img src="images/main/tel.gif" alt="" />
+			<span>032-560-8006</span>
+		</a>
+		<div class="addrWrap">
+			<ul class="util clearFix">
+				<li><a href="">개인정보처리방침</a></li>
+				<li><a href="">찾아오시는 길</a></li>
+				<li><a href="">PC버전</a></li>
+			</ul>
+			<address>
+				<span>인천광역시 서구 당하동 350-2 / 인천광역시 부평구 부평동 124-4 대표자 이우영 </span>
+				<span>사업자등록번호 136-82-01793  / 통신판매번호 2010-인천부평-00354</span> 
+				<span>전화 032-560-8006 / 팩스 032-560-8048 개인정보관리자 임동현 (재)글로벌에듀 </span>
+				<span>인천광역시 서부교육청 평생교육시설 제 서부평생-2호(인천영어마을)</span>
+				<span class="copyright"> COPYRIGHTS© 2014 EDIBLE International Academy. all rights reserved.</span>
+			</address>
+		</div>
+	</footer>
+</body>
+</html>

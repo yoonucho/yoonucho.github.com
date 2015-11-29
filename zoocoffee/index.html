@@ -1,0 +1,220 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link rel="stylesheet" href="css/normalize.css" /> 
+	<link rel="stylesheet" href="css/common.css" /> 
+	<link rel="stylesheet" href="css/layout.css" /> 
+	<link rel="stylesheet" href="css/main.css" /> 
+	<link rel="stylesheet" href="css/jquery.bxslider.css" /> 
+	<!-- <link rel="stylesheet" href="css/CSSreset.min.css" />  -->
+
+	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
+	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="js/jquery.als-1.7.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(e){  
+			$("#header #gnb .menu"  ).on("mouseenter",function(e){
+				$("#header").stop().animate( {height:310},500);
+			})
+			$("#header").on("mouseleave", function(e){
+				$("#header").stop().animate({height:310},500);
+			});
+			$("#mainVisual .visualList").bxSlider({
+				auto:true,mode:"fade"
+
+				//,pagerCustom:"#mainVisual .indicator"
+			});
+
+			$('#mainArrow .up').click(function () {
+				 $("html, body").animate({scrollTop: 0}, 600,"swing");
+					return false;
+			});
+			$('#mainArrow .down').click(function () {
+				 $("html, body").animate({scrollTop: 400}, 600,"swing");
+					return false;
+			});
+			
+			$("#rolling-banner").als({
+				visible_items: 3,
+				scrolling_items: 2,
+				orientation: "horizontal",
+				circular: "yes",
+				autoscroll: "yes"
+			});
+			//$("#mainContents .rollingList").bxSlider({
+					//auto:true,
+					//pagerCustom:".rolling .indicator"
+			//})
+		}); 
+	</script> 
+</head>
+<body>
+	<header  id="header">
+		<div class="gnbWrap">
+			<div class="gnbBox">
+				<h1 class="logo">
+					<a href=""><img src="images/layout/topLogo.jpg" alt="주커피로고" /></a>
+				</h1>	
+				<ul class="util">
+					<li><a href="">HOME</a></li>
+					<li><a href="">LOGIN</a></li>
+					<li><a href="">JOIN</a></li>
+					<li><a href="">MYPAGE</a></li>
+				</ul>
+				<ul id="gnb">
+					<li class="menu menu1"><a href="">주커피소개</a>
+						<ul class="sub sub1">
+							<li><a href="">주커피는?</a></li>
+							<li><a href="">주커피컨셉</a></li>
+							<li><a href="">인테리어컨셉</a></li>
+							<li><a href="">보도자료</a></li>
+							<li><a href="">본사오시는길</a></li>
+						</ul>
+					</li>
+					<li class="menu menu2"><a href="">메뉴</a>
+						<ul class="sub sub2">
+							<li><a href="">NEW</a></li>
+							<li><a href="">에스프레소/커피</a></li>
+							<li><a href="">아임코리안</a></li>
+							<li><a href="">아더베버리지</a></li>
+							<li><a href="">스무디/프라페</a></li>
+							<li><a href="">티라떼/티</a></li>
+							<li><a href="">베이커리/브런치</a></li>
+							<li><a href="">COE스페셜커피/더치커피</a></li>
+							<li><a href="">MD상품</a></li>
+						</ul>
+					</li>
+					<li class="menu menu3"><a href="">매장안내</a>
+						<ul class="sub sub3">
+							<li><a href="">매장안내</a></li>
+						</ul>
+					</li>
+					<li class="menu menu4"><a href="">가맹안내</a>
+						<ul class="sub sub4">
+							<li><a href="">가맹점개설</a></li>
+							<li><a href="">가맹안내및절차</a></li>
+							<li><a href="">투자비용</a></li>
+							<li><a href="">가맹상담방법</a></li>
+							<li><a href="">추천점포</a></li>
+							<li><a href="">가맹FAQ</a></li>
+						</ul>
+					</li>
+					<li class="menu menu5"><a href="">커뮤니티</a>
+						<ul class="sub sub5">
+							<li><a href="">공지사항</a></li>
+							<li><a href="">이벤트</a></li>
+							<li><a href="">매장FAQ</a></li>
+							<li><a href="">고객문의</a></li>
+						</ul>
+					</li>
+					<li class="menu menu6"><a href="">경영주메뉴</a>
+						<ul class="sub sub6">
+							<li><a href="">본사공지사항</a></li>
+							<li><a href="">신메뉴레시피</a></li>
+							<li><a href="">아이디어</a></li>
+							<li><a href="">건의사항</a></li>
+						</ul>
+					</li>
+				</ul>
+				<div class="branch">
+					<ul class="china">
+						<li class="site"><a href="">CHINA SITE</a></li>
+						<li class="webbook"><a href="">CHINA WEB BOOK</a></li>
+					</ul>
+					<ul class="english">
+						<li><a href="">ENGLISH WEB BOOK</a></li>
+					</ul>
+				</div> <!-- branch end -->
+			</div>
+		</div> <!-- gnbWrap end -->
+	</header> <!-- header end -->
+	<section  id="mainVisual" class="auto clearFix">
+		<div class="mainWrap">
+			<ul class="visualList">
+				<li class="visual01"></li>
+				<li class="visual02"></li>
+				<li class="visual03"></li>
+			</ul>
+		</div>
+			<div class="center auto">
+				<img src="images/main/coffee.png" alt="커피이미지" />
+			</div>
+			<div class="arrow">
+				<ul id="mainArrow">
+					<li class="up"><img src="images/main/mainArrow01.jpg" alt="위" /></li>
+					<li class="down"><img src="images/main/mainArrow02.jpg" alt="아래" /></li>
+				</ul>
+			</div>
+	</section>> <!-- mainVisual end -->
+	<section id="mainContents" class="mainCon">
+		<div class="mainConTop auto clearFix">
+			<div class="news">
+				<h2><img src="images/main/main01_title.jpg" alt="주커피소식" /></h2>
+				<p>주커피만의 특별한 이야기를  <br />들려드릴게요. <br />
+				지금 주커피에 오시면, <span>행복한</span> <br /><span>한모금이 여러분을 기다립니다.</span></p>
+			</div>
+			<div id="rolling-banner"class="als-container">
+				<span class="als-prev"><img src="images/main/arrow01.jpg" alt="prev" title="prev"></span>
+				<div class="als-viewport">
+						<ul class="als-wrapper">
+							<li class="als-item"><a href=""><img src="images/main/con01.jpg" alt="iso인증"></a></li>
+							<li class="als-item"><a href=""><img src="images/main/con02.jpg" alt="과일티"></a></li>
+							<li class="als-item"><a href=""><img src="images/main/con03.jpg" alt="오렌지"></a></li>
+							<li class="als-item"><a href=""><img src="images/main/con04.jpg" alt="자이언트"></a></li>
+							<li class="als-item"><a href=""><img src="images/main/con05.jpg" alt="무료"></a></li>
+						</ul>
+				</div>
+				<!-- alsViewport end -->
+				<span class="als-next"><img src="images/main/arrow02.jpg" alt="next" title="next"></span>
+			</div>
+			<!-- container end --></div>
+		<div class="mainConBottom">
+		<div class="banner2 auto clearFix">
+				<div class="roasting">
+				  	<h2><img src="images/main/main02_title.png" alt="대자연을 로스팅하다" /> </h2>
+				  	<p>도심속에 동물원, 주커피<br/ >  주커피에만 있는 세가지<br/ >  진정한 쉼, 즐거움, 추억을<br/ > 만나보세요.</p>
+				 </div>  
+				<div class="aniWrap auto">
+					<div class="flash">
+						<iframe width="500" height="280" src="http://zoo-coffee.com/flash/movieFlash.swf" frameborder="0" allowfullscreen></iframe>
+					</div>
+						<div class="animal">
+							<img class="leftA" src="images/main/leftA.png" alt=" ">
+							<img class="rightA" src="images/main/rightA.png" alt=" ">
+							<img class="rightB"src="images/main/rightB.png " alt="">
+							<img class="btn01" src="images/main/btn01.png" alt=" ">
+							<img class="btn02" src="images/main/btn02.png" alt=" ">
+							<img class="btn03" src="images/main/btn03.png" alt=" ">
+						</div>
+				</div>
+			</div>
+		</div> 
+	<!-- banner end --> 
+	</section> <!-- mainContents end -->
+	<footer id="footer" class="clearFix">
+		<address>
+			서울시 서초구 서초동 1540-11번지 (보광빌딩4F) / 일반문의:02-3472-8500 / 창업문의:02-3472-4200 / copyright (C) 2013 zoo-coffee all rights reserved.
+		</address>
+		<div class="footerUtil">
+			<ul>
+				<li class="util1"><a href="">개인정보취급방침</a> </li>
+				<li class="util2"><a href=""></a></li>
+				<li class="util3"><a href=""></a></li>
+			</ul>
+		</div>  <!-- footerUtil end -->
+		<div class="logoSong">
+			<ul>
+				<li class="music"></li>
+				<li class="song">주커피로고송</li>
+				<li class="play"></li>
+				<li class="stop"></li>
+			</ul>
+		</div> 
+	</footer> <!-- footer end -->
+
+</body>
+</html>
