@@ -1,0 +1,23 @@
+#mainHead {position: relative;width:100%;}
+.logoWrap {height:800px;padding:20px 0;}
+.logo {position: relative; width: 370px;height:600px;padding:5px;top:100px;}
+.logo .title {position:absolute;width:178px;height:50px;left:110px;bottom:170px;background: url("../images/main/title.png") no-repeat 0 50%;}
+/*.logo .fingerM {position: absolute;left:183px;bottom:-8px;}*/
+.logoWrap p {position:absolute;left:97px;top:430px;font-size:30px;color:#8d8d8d;font-weight:bold;}
+.yu_logo  {position:absolute;width:368px;height:368px;text-align:center;background-image: url(../images/main/bh_logo.png);background-size:cover; }
+.yu_logo:hover  {position:absolute;border-radius:50%;text-align:center;background:url(../images/main/bh_logoOverW.png);background-size:cover; }
+
+@media all and  (max-width:1000px) {
+  /*#mainHead .logoWrap {height:400px;}*/
+}
+
+@media all and (max-width:640px) {
+
+}
+@media all and (max-width:480px) {
+#mainHead .logoWrap {width:400px;}
+#mainHead .logo .title {display:none;}
+}
+@media all and (max-width:320px) {
+ 
+}

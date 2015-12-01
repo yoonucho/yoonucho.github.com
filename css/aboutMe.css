@@ -1,0 +1,75 @@
+
+#aboutMe {position: relative;font-size:15px;line-height:1.5;}
+
+#aboutMe .abContainer {position:relative;width:1000px;height:1300px;padding:30px 0;background: url("../images/main/aboutC.png"),url("../images/main/aboutmeBg.jpg");
+background-position: 30% 30%, center;background-repeat:no-repeat;}
+/*#aboutMe p {display:none;position:absolute;padding-left:10px;}*/
+#aboutMe .abContainer .left p {position:absolute;padding-left:10px;}
+#aboutMe .abContainer .right p {display:none;position:absolute;padding-left:10px;}
+
+#type1 {white-space:pre;padding-left:10px;}
+#type2 {white-space:pre;padding-left:10px;}
+/*#type3 {white-space:pre;padding-left:10px;}*/
+#type4 {white-space:pre;padding-left:10px;}
+/*#type5 {white-space:pre;padding-left:10px;}*/
+#type6 {white-space:pre;padding-left:10px;}
+/*#type7 {white-space:pre;padding-left:10px;}*/
+#type8 {white-space:pre;padding-left:9px;}
+/*#type9 {white-space:pre;padding-left:10px;}*/
+#type10 {white-space:pre;padding-left:10px;}
+/*#type11{white-space:pre;padding-left:10px;}*/
+#type12{white-space:pre;padding-left:10px;}
+
+.abContainer .realTime {position:absolute;font-size:12px;color:#50c34e;top:10px;left:110px;}
+
+.abContainer .left {left:100px;border-radius:4px;box-shadow:0px 5px 5px 0px rgba(0,0,0,0.2);background:#fff;padding:2px;display:none;}
+.abContainer .right {right:100px;border-radius:4px;box-shadow:0px 5px 5px 0px rgba(0,0,0,0.2);background:#ddf7bf;padding:2px;display:none;}
+.abContainer .left .realTime {color:#a0acb6;top:10px;left:130px;}
+.abContainer .dc {position:absolute;top:2px;right:-166px;}
+
+.abContainer .intro {position: relative;height:120px;}
+.abContainer .intro .right {position: absolute;right:100px;width:300px;height:90px;top:0; }
+.abContainer .intro .right #intro01 p {display:none;position:absolute;padding-left:8px;}
+.abContainer .intro .right .realTime {display: block;left:200px;top:70px;}
+.abContainer .intro .right .dc {right:2px;top:63px;}
+
+.abContainer .name {position: relative;height:90px;}
+.abContainer .name .left {position: absolute;left:100px;width:200px;height:30px;top:0px;}
+.abContainer .name .right {position: absolute;right:100px;width:300px;height:30px;top:40px; }
+.abContainer .name .right .realTime {display: block;left:200px;}
+.abContainer .name .right .dc {right:2px;}
+
+.abContainer .pic {position: relative;height:300px;}
+.abContainer .pic .left {position: absolute;left:100px;width:200px;height:30px;top:0px;}
+.abContainer .pic .right {position: absolute;right:100px;width:360px;height:230px;top:40px; }
+/*.abContainer .pic .right #pic02 {display: block;}*/
+.abContainer .pic .right #pic02 #pic_s {display:none;padding:3px;}
+.abContainer .pic .right .realTime {display: block;width:100px;height:30px;left:255px;top:195px;padding:5px;color:#fff;background:#413c26;opacity:0.6;}
+.abContainer .pic .right .dc {left:318px;top:191px;color:#fff;}
+
+.abContainer .age {position: relative;height:90px ;}
+.abContainer .age .left {position: absolute;left:100px;width:200px;height:30px;top:0px;}
+.abContainer .age .right {position: absolute;right:100px;width:300px;height:30px;top:40px; }
+.abContainer .age .right .realTime {display: block;left:200px;}
+.abContainer .age .right .dc {right:2px;}
+
+.abContainer .skill {position: relative;height:120px;top:90px;}
+.abContainer .skill .left {position: absolute;left:100px;width:200px;height:30px;top:0px;}
+.abContainer .skill .right {position: absolute;right:100px;width:400px;height:60px;top:40px;padding:5px; }
+.abContainer .skill .right #skill02 p {display:none;position:absolute;padding-left:8px;}
+.abContainer .skill .right .realTime {display: block;left:300px;top:40px;}
+.abContainer .skill .right .dc {right:2px;top:32px;}
+
+.abContainer .career {position: relative;height:240px;top:90px;}
+.abContainer .career .left {position: absolute;left:100px;width:200px;height:30px;top:0px;}
+.abContainer .career .right {position: absolute;right:100px;width:400px;height:150px;top:40px;padding:5px; }
+.abContainer .career .right .realTime {display: block;left:300px;top:130px;}
+.abContainer .career .right .dc {right:2px;top:122px;}
+
+.abContainer .contact {position: relative;height:270px;top:90px;}
+.abContainer .contact .left {position: absolute;left:100px;width:200px;height:30px;top:0px;}
+.abContainer .contact .right {position: absolute;right:100px;width:336px;height:180px;top:40px; }
+.abContainer .contact .right #contact_s {display:none;}
+.abContainer .contact .right .realTime {display: block;left:238px;top:157px;}
+.abContainer .contact .right .dc {right:2px;top:148px;}
+
