@@ -10,7 +10,6 @@
 		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans" type="text/css">
 		<link rel="stylesheet" href="css/normalize.css" />
 		<link rel="stylesheet" href="css/common.css" />
-		<link rel="stylesheet" href="css/font.css" />
 	  	<link rel="stylesheet" href="css/jquery.bxslider.css" />
 		<link rel="stylesheet" href="css/layout.css" />
 		<link rel="stylesheet" href="css/main.css" />
@@ -25,6 +24,7 @@
 		<script type="text/javascript" src="js/jquery.mousewheel-3.0.6.pack.js"></script>
 		<script type="text/javascript" src="js/jquery.fancybox.pack.js?v=2.1.5"></script>
 		<script type="text/javascript" src="js/sticker.min.js"></script>
+		<script type="text/javascript" src="js/html5shiv.js"></script>
 		<script type="text/javascript">
 			$(document).ready(function() {
 				window.onload = function() {
@@ -56,27 +56,27 @@
 				<!-- auto end -->
 		</header>
 		<!-- header end -->
-		<div id="mainHead">
+		<section id="mainHead">
+			<h1 class="blind"></h1>
 			<div class="logoWrap auto ">
 				<div class="logo auto clearFix" >
-					<a href="">
-					<div class="yu_logo">
-					</div>
+					<a href="aboutMe.html" alt="aboutMe" title="aboutMe">
+						<div class="sticker yc"></div>
 					</a>
 					<div class="title"></div>
 					<p>코딩덕후지향인</p>
+					<!-- <div class="fingerM auto"><img src="images/main/fingerM.png" alt=""></div> -->
 				</div> 
 					<!-- logo end -->
 			</div>
-
 			<!-- logoWrap  end -->
-		</div>
+		</section>
 			<!-- mainHead end  -->
 		<footer id="footer">
 			<div class="addWrap auto clearFix">
-				<a href="javascript:window.location.reload();" title="refresh"><div class="sticker logo_f"></div></a>
+				
 				<address>			
-						ⓒ 2015 <span id="copyright">CHO YOON U</span> ALL Rights Reserved.				
+						ⓒ 2015 <span id="copyright"> CHO YOON U <a href="javascript:window.location.reload();" title="refresh"><div class="logo_f"></div></a></span>  ALL Rights Reserved.				
 				</address>
 			</div>
 		</footer>

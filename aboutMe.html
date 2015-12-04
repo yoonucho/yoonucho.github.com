@@ -7,112 +7,99 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="stylesheet" href="css/main.css" />
 	<link rel="stylesheet" href="css/layout.css" />
 	<link rel="stylesheet" href="css/aboutMe.css" />
-	<link rel="stylesheet" href="css/jquery-ui.css" />
-	<!-- <link rel="stylesheet" href="css/type.css" /> -->
 	<link rel="shortcut icon" href="images/layout/favicon.ico">
 	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
 	<script type="text/javascript" src="js/typed.js"></script>
 	<script type="text/javascript" src="js/sticker.min.js"></script>
-	<script type="text/javascript" src="js/jquery-ui.js"></script>
+	<script type="text/javascript" src="js/TweenMax.min.js"></script>
+	<script type="text/javascript" src="js/html5shiv.js"></script>
 
 	<script type="text/javascript">
 		$(document).ready (function(e){
-			setTimeout(function(){
-				$('.abContainer .intro .right').show("drop",{direction: "left"} ,200);
-				$("#type1").typed({
-					startDelay: 80,
-					stringsElement: $('#intro01'),
-					typeSpeed: 50,
-					loop: false,
-					contentType: 'html', // or text
-					// defaults to false for infinite loop
-					loopCount: false, 
+			var tl=new TimelineMax({});
+			tl.from($('.abContainer .intro .right'),1,{opacity:0,left:"-=500",ease:Bounce.easeOut,
+				onComplete:function(){
+					$("#type1").typed({
+						// startDelay: 30,
+						stringsElement: $('#intro01'),
+						typeSpeed: 30,
+						loop: false,
+						contentType: 'html', // or text
+						// defaults to false for infinite loop
+						loopCount: false, 
+					})
+			}})
+			.from($('.abContainer .name .left'),1,{opacity:0,left:"-=50"},"+=2")
+			.from($('.abContainer .name .right'),1,{opacity:0,right:"-=50",
+				onComplete:function(){
+					$("#type2").typed({
+						stringsElement: $('#name02'),
+						typeSpeed: 30,
+						loop: false,
+						contentType: 'html', // or text
+						// defaults to false for infinite loop
+						loopCount: false, 
+					})
+			}}) 
+			.from($('.abContainer .pic .left'),1,{opacity:0,left:"-=50"},"+=1")
+			.from($('.abContainer .pic .right'),1,{opacity:0,right:"-=50",
+				onComplete:function(){
+					$('#pic_s').fadeIn(500); }
 			})
-			},300); 
-			setTimeout(function(){
-				$('.abContainer .name .left').show( "drop",{direction: "up"} ,200);
-				},200);
-			setTimeout(function(){
-				$('.abContainer .name .right').show("drop",{direction: "down"} ,400);
-				$("#type2").typed({
-					stringsElement: $('#name02'),
-					typeSpeed: 80,
-					loop: false,
-					contentType: 'html', // or text
-					// defaults to false for infinite loop
-					loopCount: false, 
-			})
-			},500); 
-			setTimeout(function(){
-				$('.abContainer .pic .left').show("drop",{direction: "up"} ,600);
-			},700); 
-			setTimeout(function(){
-				$('.abContainer .pic .right').fadeIn(700);
-				$('#pic_s').fadeIn(800);
-			},900); 
-			setTimeout(function(){
-				$('.abContainer .age .left').show("drop",{direction: "up"} ,1000);
-			},1100);
-			setTimeout(function(){
-				$('.abContainer .age .right').show("drop",{direction: "down"} ,1000*1+200);
-				$("#type6").typed({
-					stringsElement: $('#age02'),
-					typeSpeed: 100,
-					loop: false,
-					contentType: 'html', // or text
-					// defaults to false for infinite loop
-					loopCount: false,      
-			})
-			},1000*1+300);
-			setTimeout(function(){
-				$('.abContainer .skill .left').show("drop",{direction: "up"} ,1000*1+400);
-			},1000*1+500);
-			setTimeout(function(){
-				$('.abContainer .skill .right').show("drop",{direction: "down"} ,1000*1);
-				$("#type8").typed({
-					stringsElement: $('#skill02'),
+			.from($('.abContainer .age .left'),1,{opacity:0,left:"-=50"},"+=1")
+			.from($('.abContainer .age .right'),1,{opacity:0,right:"-=50",
+				onComplete:function(){
+					$("#type6").typed({
+						stringsElement: $('#age02'),
+						typeSpeed: 30,
+						loop: false,
+						contentType: 'html', // or text
+						// defaults to false for infinite loop
+						loopCount: false,      
+				})
+			}}) 
+			.from($('.abContainer .edu .left'),1,{opacity:0,left:"-=50"},"+=1")
+			.from($('.abContainer .edu .right'),1,{opacity:0,right:"-=50",
+				onComplete:function(){
+				    $("#type8").typed({
+					stringsElement: $('#edu02'),
 					typeSpeed: 30,					
 					loop: false,
 					contentType: 'html', // or text
 					// defaults to false for infinite loop
 					loopCount: false,       
 				})
-			},1000*2);
-			setTimeout(function(){
-				$('.abContainer .career .left').show("drop",{direction: "up"} ,1000*2+200);
-	
-			},1000*2+300);
-			setTimeout(function(){
-				$('.abContainer .career .right').show("drop",{direction: "down"} ,1000*2+500);
-				$("#type10").typed({
-					stringsElement: $('#career02'),
+			}}) 
+			.from($('.abContainer .skill .left'),1,{opacity:0,left:"-=50"},"+=5")
+			.from($('.abContainer .skill .right'),1,{opacity:0,right:"-=50",
+				onComplete:function(){
+				        $("#type10").typed({
+					stringsElement: $('#skill02'),
 					// startDelay: 2000,
 					typeSpeed: 30,
 					loop: false,
 					contentType: 'html', // or text
 					// defaults to false for infinite loop
-					loopCount: false,      
+					loopCount: false,    
 				})
-			},1000*3);
-			setTimeout(function(){
-				$('.abContainer .contact .left').show("drop",{direction: "up"} ,1000*5);
-			},1000*6+200);
-			setTimeout(function(){
-				$('.abContainer .contact .right').show("drop",{direction: "down"} ,1000*4);
-				$('#contact_s').fadeIn(1000*4+200),
-				$("#type12").typed({
+			}}) 
+			.from($('.abContainer .contact .left'),1,{opacity:0,left:"-=50"},"+=6")
+			.from($('.abContainer .contact .right'),1,{opacity:0,right:"-=50",
+				onComplete:function(){
+				      $('#contact_s').fadeIn(1000*3),
+				      $("#type12").typed({
 					stringsElement: $('#contact02'),
-					startDelay: 500,
-					typeSpeed: 300,
+					// startDelay: 500,
+					typeSpeed: 150,
 					loop: false,
 					contentType: 'html', // or text
 					// defaults to false for infinite loop
 					loopCount: false,
-			          
-				});
-				},1000*6+300);				
+				})
+			}})
 				 /* realTime */
 				function addZero(num) {
 					if(num<10){
@@ -210,13 +197,14 @@
 		<div class="intro">
 			<div class="right">
 				<div id="intro01">
-					<p>안녕하세요<br />   웹퍼블리셔가 1차 목표인 <br />   코딩덕후 지향인입니다. </p>
+					<p>  안녕하세요<br />   웹퍼블리셔가  목표인 <br />   코딩덕후 지향인입니다. </p>
 				</div>
 				<span id="type1"></span>
-				<img class="dc" src="images/main/dc.png" alt="">
+				<img class="dc" src="images/main/dc.png" alt="더블체크">
 				<div class="realTime"></div>
 			</div>
-		</div>	
+		</div>	 
+		<!-- intro end -->
 		<div class="name">
 			<div class="left">
 				<div id="name01">
@@ -229,15 +217,15 @@
 					<p>조윤우입니다.</p>
 				</div>
 				<span id="type2"></span>
-				<img class="dc" src="images/main/dc.png" alt="">
+				<img class="dc" src="images/main/dc.png" alt="더블체크">
 				<div class="realTime"></div>
 			</div>	
 		</div>
 		<!-- name end -->
 		<div class="pic">
-			<div class="left ">
+			<div class="left">
 				<div id="pic01">
-					<p>사진은요?</p>
+					<p>프로필사진은 없나요 ?</p>
 				</div> 
 				<div class="realTime"></div>
 			</div>		
@@ -248,7 +236,7 @@
 					<span id="type4"></span>	
 					<div class="rd">
 						<div class="realTime"></div>	
-						<img class="dc" src="images/main/dc_w.png" alt="">
+						<img class="dc" src="images/main/dc_w.png" alt="더블체크">
 					</div>
 			</div>	
 		</div> 
@@ -256,7 +244,7 @@
 		<div class="age">
 			<div class="left">
 				<div id="age01">
-					<p>몇살인가요?</p>
+					<p>몇 살인가요?</p>
 				</div> 
 				<div class="realTime"></div>
 			</div>		
@@ -267,43 +255,44 @@
 				</div>
 				<span id="type6"></span>
 				<div class="realTime"></div>
-				<img class="dc" src="images/main/dc.png" alt="">
+				<img class="dc" src="images/main/dc.png" alt="더블체크">
 			</div>
+		</div>	 
 		<!-- age end-->
+		<div class="edu">
+			<div class="left">
+				<div id="edu01">
+					<p>무엇을 배웠나요?</p>
+				</div> 
+				<div class="realTime"></div>
+			</div>		
+			<div class="right">
+				<div id="edu02">
+					<p>2015년에  webDesign &amp; Publisher 과정을  <br/>  2012년에는  Java &amp; Oracle 과정을 배웠습니다.</p>
+				</div>
+				<span id="type8"></span>
+				<div class="realTime"></div>
+				<img class="dc" src="images/main/dc.png" alt="더블체크">
+			</div>	
+		</div>
+		<!-- edu end -->
 		<div class="skill">
 			<div class="left">
 					<div id="skill01">
-						<p>보유스킬은?</p>
+						<p>스킬은?</p>
 					</div> 
 					<div class="realTime"></div>
 			</div>		
 			<div class="right">
 				<div id="skill02">
-					<p>  HTML, CSS, jQuery,mediaQuery,웹표준<br />    Photoshop,Illustrator,Dreamweaver</p>
+					<p>  HTML, CSS, jQuery,mediaQuery,웹표준<br />    Photoshop,Illustrator,Dreamweaver를 다룹니다.</p>
 				</div>
-					<span id="type8"></span>
+					<span id="type10"></span>
 					<div class="realTime"></div>
-					<img class="dc" src="images/main/dc.png" alt="">
+					<img class="dc" src="images/main/dc.png" alt="더블체크">
 			</div>	
-		</div> 
+		</div>  
 		<!-- skill end -->
-		<div class="career">
-			<div class="left ">
-				<div id="career01">
-					<p>이력은요?</p>
-				</div> 
-				<div class="realTime"></div>
-			</div>		
-			<div class="right">
-				<div id="career02">
-					<p>2015년 12월 10일 <br />  인천직업능력교육원 <br />  webDesign &amp; Publisher 과정 수료 예정입니다.<br/>  2015년 7월 21일 <br />  인천직업능력교육원 <br />  webDesign &amp; Publisher 과정 입교했고</p>
-				</div>
-				<span id="type10"></span>
-				<div class="realTime"></div>
-				<img class="dc" src="images/main/dc.png" alt="">
-			</div>	
-		</div>
-		<!-- career end -->
 		<div class="contact">
 			<div class="left">
 				<div id="contact01">
@@ -312,15 +301,15 @@
 				<div class="realTime"></div>
 			</div>		
 			<div class="right">
-				<a id="contact_s" href="contact.html"><img src="images/main/contact_s.jpg" alt=""></a>
+				<a id="contact_s" href="contact.html"><img src="images/main/contact_s.jpg" alt="연락처링크이미지"></a>
 				<div id="contact02">
 					<p>이미지를 클릭하세요.</p>
 				</div>
 				<span id="type12"></span>
 				<div class="realTime"></div>
-				<img class="dc" src="images/main/dc.png" alt="">
+				<img class="dc" src="images/main/dc.png" alt="더블체크">
 			</div>	
-		</div>
+		</div> 
 		<!-- contact end -->
 	</div>
 	<!-- auto end -->
@@ -328,9 +317,8 @@
 <footer id="ac_footer">
 	<div class="acWrap auto clearFix">
 		<div class="acl auto">
-				<a href="javascript:window.location.reload();" title="refresh"><div class="sticker logo_f"></div></a>
 				<address>			
-						ⓒ 2015 <span id="copyright">CHO YOON U</span> ALL Rights Reserved.				
+						ⓒ 2015 <span id="copyright"> CHO YOON U <a href="javascript:window.location.reload();" title="refresh"><div class="sticker logo_f"></div></a></span>  ALL Rights Reserved.				
 				</address>
 		</div>
 	</div>

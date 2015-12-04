@@ -2,19 +2,9 @@
 .fWrap {border:solid 1px #e8e8e8;}
 .fWrap .f_util > li {padding:5px;border-bottom:solid 1px #e8e8e8; }
 
-/*.fWrap .cont {width:80%;padding:100px;}
-.fWrap .cont a {color:#27aae0;}
-
-.fWrap .cont ul {float:left;padding:10px;}
-.fWrap .cont .cb {width:20%}
-.fWrap .cont .msn {width:40%;color:#9b9b9b;padding:20px;}
-.fWrap .cont .yoonu {width:40%;color:#27aae0;padding:20px;}
-.fWrap .cont ul li {padding:15px;}
-.fWrap .cont .cb > li {padding:0;}
-*/
 .fWrap .ctt {width:80%;padding:100px;}
 .fWrap .cont {text-align:left;line-height: 1.5;margin:20px 10px;}
-.fWrap .cont th {color:#9b9b9b;width:150px;padding: 10px;vertical-align: middle;border:1px solid #fff;}
+.fWrap .cont th {color:#9b9b9b;width:150px;padding: 10px;vertical-align:middle;border:1px solid #fff;}
 .fWrap .cont td {color:#27aae0;width:350px;padding: 10px;vertical-align:middle;border: 1px solid #fff;}
 .fWrap .cont a {color:#0088cc;text-decoration: none;}
 .fWrap .cont a:hover {border-bottom:solid 3px #0088cc;padding-bottom:5px;}

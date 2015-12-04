@@ -1,0 +1,52 @@
+body {font-family:"nanum","돋움","Dotum","san-serif",font-size:16px;color:#333;line-height:1.5;}
+a {color:#333;text-decoration:none;}
+* {margin:0;padding:0;box-sizing:border-box;}
+img {width:100%;max-width:100%;} 
+a img {vertical-align:top;}
+li {list-style:none;}
+
+
+#header {height:60px;background:#056839;}
+#header h1 {margin:0;text-align:center;}
+#header h1 a {display:block;height:60px;}
+#header h1 img {height:100%;width:auto;}
+
+#header .btnAll {display:block;height:60px;position:absolute;left:0;top:0;}
+#header .btnAll img {height:100%;width:auto;}
+
+#header .btnBack {display:block;height:60px;position:absolute;right:0;top:0;}
+#header .btnBack img {height:100%;width:auto;}
+
+#gnb {width:70%;height:100%;background:#fff;position:absolute;top:60px;left:-70%;z-index:9999;}
+
+#gnb nav > ul > li  {border-bottom:1px solid #ccc;}
+#gnb nav > ul > li > a {padding:10px 0 10px 20px;display:block; background:#fff;}
+#gnb nav > ul > li .sub  {display:none;}
+#gnb nav > ul > li .sub li {border-bottom:1px solid #ccc;}
+#gnb nav > ul > li .sub li:last-child {border-bottom:none;}
+#gnb nav > ul > li .sub li a {padding:10px 0 10px 20px;display:block;background:#e1e1e1;}
+
+
+#footer .btnTel {display:block;background:#262422;color:#f9def6e;padding:15px 0;text-align:center;font-size:1.5em;font-family:"nanumB";}
+
+#footer .btnTel img {width:auto;}
+
+#footer .addrWrap {background:#403c39;color:#8c8376;text-align:center;}
+#footer .addrWrap .util li {display:inline-block;padding:20px 10px;}
+#footer .addrWrap .util li a {color:#98a460;background:#403c39;}
+#footer .addrWrap address {font-size:0.75em;font-style:normal;}
+#footer .addrWrap address span {display:block;}
+
+
+
+
+
+/* 
+	웹폰트 
+	사용자의 디바이스에 깔려 있지 않은 폰트를
+	내 서버에서 내려받기해서 
+	다른 어떤 곳에서도 똑같이 보이게 할 때....
+
+
+
+*/

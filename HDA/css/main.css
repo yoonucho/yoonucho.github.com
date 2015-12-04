@@ -1,0 +1,31 @@
+#mainVisual {width:100%;}
+#mainVisual .visualList li {width:100%; height:450px;}
+
+#mainVisual .visualList li.visual01 {background:url("../images/main/Visual01.jpg") no-repeat 50% 0; }
+#mainVisual .visualList li.visual02 {background:url("../images/main/Visual02.jpg") no-repeat 50% 0; }
+#mainVisual .visualList li.visual03 {background:url("../images/main/Visual03.jpg") no-repeat 50% 0; }
+
+#mainContents  {}
+#mainContents .curriculum {float:left;padding-top:50px;}
+
+#mainContents .curriculum .con {float:left;margin-left:50px;border-bottom:solid 2px;padding-bottom:20px;}
+#mainContents .curriculum .con h3 {font-size:14px;padding:10px 0;}
+#mainContents .curriculum .con p {font-size:12px;}
+#mainContents .curriculum .cur1 {margin-left:0;}
+
+#mainContents .porNews {float:left;padding-top:50px;}
+#mainContents .portfolio {float:left;margin-left:0;}
+
+
+#mainContents .porNews .news  {height:208px;float:left;margin-left:50px;margin-top:-15px;border-bottom:solid 1px;}
+#mainContents .porNews .news > ul > li > a:hover {text-decoration:underline;}
+
+#mainContents .porNews .news > h2 {padding-bottom:10px;}
+#mainContents .porNews .news > ul {font-size:13px;}
+
+#mainContents .conAccLo {height:175px;float:left;padding-top:50px;pos ition:relative;}
+#mainContents .conAccLo p {font-size:13px;}
+
+#mainContents .conAccLo .con {margin-left:50px;width:300px;float:left;border-bottom:solid #e6e6e6 1px;}
+#mainContents .conAccLo .con > a {display:block;text-decoration:underline;pos ition:absolute;padding:20px 0;}
+#mainContents .conAccLo .contact  {margin-left:0;}

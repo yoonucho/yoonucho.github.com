@@ -10,7 +10,6 @@
 		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans" type="text/css">
 		<link rel="stylesheet" href="css/normalize.css" />
 		<link rel="stylesheet" href="css/common.css" />
-		<link rel="stylesheet" href="css/font.css" />
 	  	<link rel="stylesheet" href="css/jquery.bxslider.css" />
 		<link rel="stylesheet" href="css/layout.css" />
 		<link rel="stylesheet" href="css/main.css" />
@@ -26,6 +25,7 @@
 		<script type="text/javascript" src="js/jquery.mousewheel-3.0.6.pack.js"></script>
 		<script type="text/javascript" src="js/jquery.fancybox.pack.js?v=2.1.5"></script>
 		<script type="text/javascript" src="js/sticker.min.js"></script>
+		<script type="text/javascript" src="js/html5shiv.js"></script>
 		<script type="text/javascript">
 			$(document).ready(function() {
 				$(".por1").fancybox({	
@@ -53,22 +53,7 @@
 					               }
 						   }   
 						}); 
-						$(".por2") .attr('rel', 'group')
-								    .fancybox({
-							        beforeLoad: function() {
-							            var el, id = $(this.element).data('title-id');
-							            if (id) {
-							                el = $('#' + id);
-							            
-							                if (el.length) {
-							                    this.title = el.html();
-							                }
-							            }
-							        }
-				    		});
-								   
-
-				window.onload = function() {
+					window.onload = function() {
 						            Sticker.init('.sticker');
 					        		}
 		});
@@ -119,23 +104,17 @@
 				<ul class="portfolio auto clearFix">
 				<h3>Publishing</h3>	
 					<li class="publishing">
-						<a class="por2" data-title-id="title-1" rel="group" href="images/main/HDA_b.jpg"><img src="images/main/HDA_s.jpg" alt="" /></a>
-						<div id="title-1" class="hidden">
-						    HDA 메인입니다. <a href="../HDA/index.html" target="_blank">해당페이지로 이동합니다.</a>
-						</div>
+						<a class="por2" href="../HDA/index.html" target="_blank"><img src="images/main/HDA_s.jpg" alt="HDA메인" /> <div> HDA 메인입니다</div></a>
 					</li> 
 					<li class="publishing">
-						<a class="por2" data-title-id="title-2" rel="group" href="images/main/skoolooks_b.jpg"><img src="images/main/skoolooks_s.jpg" alt="" /></a>
-						<div id="title-2" class="hidden" >스쿨룩스 메인입니다. <a href="../skoolooks/index.html" target="_blank">해당페이지로 이동합니다.</a>
-					</li> 
-					<li class="publishing">
-						<a class="por2" data-title-id="title-3" rel="group" href="images/main/edible_b.jpg"><img src="images/main/edible_s.jpg" alt="" /></a>
-						<div id="title-3" class="hidden">에더블 모바일 메인입니다.<a href="../mobile/index.html" target="_blank">해당페이지로 이동합니다.</a>
-					</li> 
-					<li class="publishing">
-						<a class="por2" data-title-id="title-4" rel="group" href="images/main/zoocoffee_b.jpg"><img src="images/main/zoocoffee_s.jpg" alt="" /></a>
-						<div id="title-4" class="hidden">주커피 메인입니다.<a href="../zoocoffee/index.html" target="_blank">해당페이지로 이동합니다.</a>
+						<a class="por2" href="../skoolooks/index.html" target="_blank"><img src="images/main/skoolooks_s.jpg" alt="스쿨룩스메인" /> <div> 스쿨룩스 메인입니다. </div></a>
 						
+					</li> 
+					<li class="publishing">
+						<a class="por2" href="../mobile/index.html" target="_blank"><img src="images/main/edible_s.jpg" alt="에더블모바일" /><div> 에더블 모바일 메인입니다.</div></a>
+					</li> 
+					<li class="publishing">
+						<a class="por2" href="../zoocoffee/index.html" target="_blank"><img src="images/main/zoocoffee_s.jpg" alt="주커피 메인" /><div> 주커피 메인입니다.</div></a>
 					</li> 
 				</ul>
 			</article>
@@ -143,11 +122,10 @@
 		<footer id="ac_footer">
 			<div class="acWrap auto clearFix">
 				<div class="acl auto">
-						<a href="javascript:window.location.reload();" title="refresh"><div class="sticker logo_f"></div></a>
-						<address>			
-								ⓒ 2015 <span id="copyright">CHO YOON U</span> ALL Rights Reserved.				
-						</address>
-				</div>
+				<address>			
+						ⓒ 2015 <span id="copyright"> CHO YOON U <a href="javascript:window.location.reload();" title="refresh"><div class="sticker logo_f"></div></a></span>  ALL Rights Reserved.				
+				</address>
+		</div>
 	</div>
 	</footer>
 	</body>

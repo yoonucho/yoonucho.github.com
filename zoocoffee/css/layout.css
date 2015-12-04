@@ -1,0 +1,94 @@
+
+/* common */
+body{font-family:"NanumGothic","돋움","굴림","serif";font-size:14px;line-height:1.5;color:#333;}
+a {text-decoration:none;color:#fff;}
+/* a:hover {color:#fff;} */
+li {list-style:none;}
+* {margin:0;padding:0;}
+.auto {margin:auto;position:relative;width:1086px;}
+
+/* header */
+#header{overflow:hidden;position:relative;z-index:10;}
+#header .gnbWrap {padding-top:20px;width:280px;height:290px;background:#000;z-index:3;}
+#header .gnbBox {padding-left:40px;}
+#header .logo {float:left;margin-bottom:-10px;}
+
+
+#header .util {clear:both;}
+#header .util li {float:left;padding:0 10px;font-size:11px; background:url("../images/layout/topLine.jpg") no-repeat 0 50%;}
+#header .util li:first-child {background:none;padding-left:0;}
+#header .util li > a{color:#777;}
+#header .util li > a:hover {color:#fff;}
+
+#header #gnb {clear:both;padding-top:10px;}
+#header #gnb .menu {font-size:20px;position:relative;margin-bottom:-4px;}
+#header #gnb .menu a:hover{color:#554743;}
+
+#header #gnb .sub{display:none;position:absolute;padding-top:10px;font-size:12px;font-weight:bold;background:#554640;margin:-22px 0 0 146px;
+height:180px;width:150px;z-index:1;letter-spacing:-1px;opacity:0.9;}
+#header #gnb .menu:hover .sub{display:block;}
+
+#header #gnb .sub li {padding:0 10px;}
+#header #gnb .sub li > a {color:#909090;}
+#header #gnb .sub li > a:hover {color:#fff;}
+
+#header #gnb .menu1 .sub1 {top:29px;}
+#header #gnb .menu2 .sub2 {top:3px;}
+#header #gnb .menu3 .sub3 {top:-23px;}
+#header #gnb .menu4 .sub4 {top:-49px;}
+#header #gnb .menu5 .sub5 {top:-75px;}
+#header #gnb .menu6 .sub6 {top:-101px;}
+
+
+#header .branch {font-size:11px;margin-top:16px;font-weight:bold;position:relative;}
+#header .branch li a {color:#777;font-weight:bold;}
+#header .branch li a:hover {color:#fff;}
+#header .branch .china {position:absolute;background:url("../images/layout/chinaLogo.jpg") no-repeat 0 50%;left:0;top:0;}
+#header .branch .china:hover {position:absolute;background:url("../images/layout/chinaLogo_over.jpg") no-repeat 0 50%;left:0;top:0;}
+#header .china li {float:left;padding-left:20px;position:relative;}
+#header .china .site a {display:block;padding-left:5px;}
+#header .china li:after {content:"";display:block;position:absolute;width:1px;height:8px;left:6px;top:4px;background:#777;}
+#header .china .site:after {display:none;}
+#header .china .webbook{display:block;padding-left:12px;}
+
+#header .branch .english {position:absolute;background:url("../images/layout/englishLogo.jpg") no-repeat 0 50%;left:0;top:15px;}
+#header .branch .english:hover {position:absolute;background:url("../images/layout/englishLogo_over.jpg") no-repeat 0 50%;left:0;top:15px;}
+
+#header .english li{float:left;padding-left:20px;}
+#header .english li a {display:block;padding-left:5px;}
+
+
+/*footer*/
+#footer {position:relative;width:100%;height:25px;line-height:1.4;top:387px;background:#141414;font-size:10px;padding:7px 0;font-weight:bold; }
+#footer address {font-style:normal;;float:left;color:#fff;padding:5px 0;}
+#footer .footerUtil {width:100px;height:30px;}
+#footer .footerUtil > ul {position:absolute;left:694px;top:10px;}
+#footer .footerUtil > ul > li {float:left;position:relative;}
+#footer .footerUtil > ul .util1 a {display:block;padding:0 5px;}
+#footer .footerUtil > ul .util1:after {content:"";display:block;position:absolute;width:1px;height:8px;left:-6px;top:4px;background:#777;}
+#footer .footerUtil > ul .util2 > a {display:block;width:16px;height:14px;padding:5px;background: url("../images/layout/bt_admin.jpg")no-repeat;}
+#footer .footerUtil > ul .util3 > a {display:block;width:16px;height:14px;padding:5px;background: url("../images/layout/bt_yabes.jpg")no-repeat;}
+
+#footer .logoSong {position:relative;float:right;font-size:12px;font-weight:bold; }
+#footer .logoSong ul {position:absolute;width:156px;height:20px;line-height:1.5;right:8px;top:-28px;}
+#footer .logoSong ul > li {float:left;padding:0 2px;}
+#footer .logoSong ul .music {width:18px;height:15px;background: url("../images/layout/musicIcon.jpg")no-repeat;}
+#footer .logoSong ul .song {padding: 0 5px 0 3px;color:#fff;}
+#footer .logoSong ul .play {width:13px;height:13px;background: url("../images/layout/musicPlay.jpg")no-repeat;}
+#footer .logoSong ul .stop {width:13px;height:13px;background: url("../images/layout/musicStop.jpg")no-repeat;}
+
+@media all and (max-width:1000px) {
+  .auto {width:100%;}
+}
+@media all and (max-width:960px) {
+
+}
+@media all and (max-width:640px) {
+
+}
+@media all and (max-width:480px) {
+
+}
+@media all and (max-width:320px) {
+
+}

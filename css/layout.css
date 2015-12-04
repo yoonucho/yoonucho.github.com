@@ -20,10 +20,9 @@ span {font-weight:bold;}
 
 #footer {width:100%;height:64px;padding:20px 0;border-top: solid 1px  #e8e8e8;}
 #footer .addWrap  {position:relative;width:450px;text-align:center;}
-#footer .addWrap .sticker {position:absolute;width:44px;height:44px;right:0;top:-12px;}
-#footer .addWrap .logo_f .sticker-img {background-image: url(../images/layout/logo_f.png);}
 #footer .addWrap address {display: block;font-style: normal;text-align:center;clear:both; }
-#footer .addWrap #copyright {font-weight: bold;}
+#footer .addWrap address .logo_f {position:absolute;width:32px;height:32px;left:213px;top:-4px;background-image: url(../images/layout/logo_f.png);}
+#footer .addWrap #copyright {font-weight: bold;padding-right:30px;}
 
 
 /*aboutMe*/
@@ -64,10 +63,11 @@ span {font-weight:bold;}
 /*footer 공통*/
 #ac_footer .acWrap {width:1000px;height:64px;padding:20px 0;border-top:solid 1px #e8e8e8;}
 #ac_footer .acWrap .acl {position:relative;width:450px;}
-#ac_footer .acl .sticker {position:absolute;width:44px;height:44px;right:0;top:-12px;}
-#ac_footer .acl .logo_f .sticker-img {background-image: url(../images/layout/logo_f.png);}
-#ac_footer .acl address {display: block;font-style: normal;text-align:center;clear:both; }
-#ac_footer .acl #copyright {font-weight: bold;}
+#ac_footer .acl .sticker {position:absolute;width:32px;height:32px;left:213px;top:-4px;}
+#ac_footer .acl address {display: block;font-style:normal;text-align:center;clear:both; }
+#ac_footer .acl address .logo_f .sticker-img {background-image: url(../images/layout/logo_f.png);}
+#ac_footer .acl #copyright {font-weight: bold;padding-right:30px;}
+
 
 @media all and (max-width:1000px) {
   .auto {width:100%;}

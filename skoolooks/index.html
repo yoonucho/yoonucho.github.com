@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link rel="stylesheet" href="css/normalize.css" /> 
+	<link rel="stylesheet" href="css/common.css" /> 
+	<link rel="stylesheet" href="css/layout.css" /> 
+	<link rel="stylesheet" href="css/jquery.bxslider.css" /> 
+	<link rel="stylesheet" href="css/main.css" /> 
+	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
+	<script type="text/javascript" src="js/html5shiv.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(e){  
+			$("#gnb .login .lg" ).on("mouseenter",function(e){
+				$("#header").stop().animate( {height:97},500);
+			});
+			$("#header").on("mouseleave", function(e){
+				$("#header").stop().animate({height:67},500);
+			})
+		}); 
+	</script>
+
+</head>
+<body>
+	<div id="header">
+		<div id="gnb" class="auto clearFix">
+			<h1 class="logo">
+				<a href=""><img src="images/layout/logo.gif" alt="스쿨룩스로고" /></a>
+			</h1>
+			<ul class="menu">
+				<li><a href="">스쿨룩스 스타일</a></li>
+				<li><a href="">카달로그</a></li>
+				<li><a href="">매장찾기</a></li>
+				<li><a href="">고객문의</a></li>
+			</ul>
+			<ul class="login">
+				<li class="lg"><a href="">로그인</a>
+					<ul class="sub">
+						<li class="sub1"><a href="">로그인</a></li>
+						<li class="sub1"><a href="">아이디/비밀번호 찾기</a></li>
+					</ul>
+				</li>
+				<li><a href="">회원가입</a></li>
+			</ul>		
+			<ul class="sns">
+				<a href=""><img src="images/layout/new_nav_u1.gif" alt="" /></a>
+				<a href=""><img src="images/layout/new_nav_u3.gif" alt="" /></a>
+			</ul>
+		</div> <!-- gnb end -->
+		<div class="subBg"></div>
+	</div> <!-- header end-->
+	<div id="mainVisual">
+		<ul>
+			<li class="visual"></li>
+		</ul>		
+	</div> <!-- mainVisual end -->
+	<div id="footer">
+		<div class="auto clearFix">
+			<h1 class="footer_logo"><a href=""><img src="images/layout/footer_logo.gif" alt="" /></a></h1>
+			<address>
+				<p>140-832 서울시 용산구 효창원로 55길 20(용문동)  TEL : 1588-3066 </p>
+				<p>copyright [c]2013 by skoolooks. all rights reserved.</p>
+			</address>		
+			<ul class="footerM">
+				<li><a href="">이용약관</a></li>
+				<li><a href="">개인정보 취급방침</a></li>
+				<li><a href="">제휴신청</a></li>
+				<li><a href="">대리점 개설신청</a></li>
+				<li><a href="">찾아오시는 길</a></li>
+			</ul>
+		</div>
+	</div> <!-- footer end -->
+</body>
+</html>
