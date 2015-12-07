@@ -68,19 +68,19 @@ height:180px;width:150px;z-index:1;letter-spacing:-1px;opacity:0.9;}
 .addWrap .footerUtil  li > a:hover {color:#fff;}
 .addWrap .footerUtil  .util1:after {content:"";display:block;position:absolute;width:1px;height:10px;left:711px;top:14px;background:#777;}
 .addWrap .footerUtil  .util1 > a {display:block;padding-left:8px;}
-.addWrap .footerUtil  .util2 > a {display:block;width:16px;height:14px;padding-right:2px;background: url("../images/layout/bt_admin.jpg")no-repeat;}
-.addWrap .footerUtil  .util3 > a {display:block;width:16px;height:14px;padding-right:2px;background: url("../images/layout/bt_yabes.jpg")no-repeat;}
+.addWrap .footerUtil  .util2 > a {display:block;width:16px;height:14px;padding-right:2px;background: url("../images/layout/bt_admin.jpg") no-repeat;}
+.addWrap .footerUtil  .util3 > a {display:block;width:16px;height:14px;padding-right:2px;background: url("../images/layout/bt_yabes.jpg") no-repeat;}
 
-.addWrap .footerUtil  .util2 > a:hover {background: url("../images/layout/bt_admin_over.jpg")no-repeat;}
-.addWrap .footerUtil  .util3 > a:hover {background: url("../images/layout/bt_yabes_over.jpg")no-repeat;}
+.addWrap .footerUtil  .util2 > a:hover {background: url("../images/layout/bt_admin_over.jpg") no-repeat;}
+.addWrap .footerUtil  .util3 > a:hover {background: url("../images/layout/bt_yabes_over.jpg") no-repeat;}
 
 #footer .logoSong * {vertical-align: middle;}
 #footer .logoSong {position:absolute;width:125px;font-size:0;font-weight:bold;line-height:1.5;right:20px;top:10px;}
 #footer .logoSong ul > li {display: inline-block; font-size:12px;}
-#footer .logoSong ul .music {width:18px;height:15px;background: url("../images/layout/musicIcon.jpg")no-repeat;}
+#footer .logoSong ul .music {width:18px;height:15px;background: url("../images/layout/musicIcon.jpg") no-repeat;}
 #footer .logoSong ul .song {color:#fff;font-size:12px;padding:0 2px;}
-#footer .logoSong ul .play {width:13px;height:13px;padding:0 2px;background: url("../images/layout/musicPlay.jpg")no-repeat;}
-#footer .logoSong ul .stop {width:13px;height:13px;background: url("../images/layout/musicStop.jpg")no-repeat;}
+#footer .logoSong ul .play {width:13px;height:13px;padding:0 2px;background: url("../images/layout/musicPlay.jpg") no-repeat;}
+#footer .logoSong ul .stop {width:13px;height:13px;background: url("../images/layout/musicStop.jpg") no-repeat;}
 
 @media all and (max-width:1000px) {
   .auto {width:100%;}

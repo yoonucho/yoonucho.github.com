@@ -1,0 +1,59 @@
+body {
+	font-family:"nanum","돋움","Dotum","san-serif";
+	font-size:16px;
+	color:#333;
+	line-height:1.5;
+}
+a {color:#333; text-decoration:none;}
+* {margin:0; padding:0; box-sizing:border-box;}
+img {width:100%;max-width:100%;display:block;}
+a img {vertical-align:top;}
+li {list-style:none;}
+.auto {width:1200px; margin:auto;}
+.auto:after {content:""; display:block;clear:both;}
+/* header */
+#header {height:90px; border-bottom:2px solid #61ba46;}
+#header .logo {float:left;margin:0;padding:10px 0;}
+#header #gnb {float:right;}
+#header #gnb > ul > li {float:left; text-align:center;}
+#header #gnb > ul > li > a {
+	display:block;height:90px;line-height:90px;
+	padding:0 25px; font-family:"nanumB";
+}
+#header .btnAll {display:block;width:45px; height:45px;
+	position:absolute;right:10px; top:7px;display:none;
+}
+@media all and (max-width:1200px) {
+	.auto {width:100%;}
+}
+@media all and (max-width:960px) {
+	#header {height:60px;}
+	#header .btnAll {display:block;}
+	#header #gnb {display:none;}
+	#header .logo {height:60px; padding:10px;}
+	#header .logo img {height:100%;width:auto;}
+}
+@media all and (max-width:640px) {
+
+}
+@media all and (max-width:480px) {
+
+}
+@media all and (max-width:320px) {
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

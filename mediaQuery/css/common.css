@@ -1,0 +1,26 @@
+.blind {display:none !important;}
+.abs {position:absolute !important;}
+.rel {position:relative !important;}
+.fixed {position:fixed !important;}
+.tac {text-align:center !important;}
+.tal {text-align:left !important;}
+.tar {text-align:right !important;}
+.taj {text-align:justify !important;}
+.block {display:block !important;}
+.inline {display:inline !important;}
+.inblock {display:inline-block !important;}
+.fl {float:left !important;}
+.fr {float:right !important;}
+.ovh {overflow:hidden !important;}
+.nobg {background:none !important;}
+.nmb {margin-bottom:0 !important;}
+
+
+
+.clearFix:after {content:"";
+display:block;width:0; height:0; font-size:0; line-height:0;overflow:hidden;
+clear:both;
+}
+
+
+

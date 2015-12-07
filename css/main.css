@@ -1,7 +1,7 @@
 #mainHead {position: relative;width:100%;}
 .logoWrap {height:750px;padding:20px 0;}
 .logo {position: relative; width: 370px;height:600px;padding:5px;top:100px;}
-.logo .title {position:absolute;width:178px;height:326px;left:110px;top:240px;background: url("../images/main/title.png") no-repeat 0 50%;}
+.logo .title {position:absolute;width:178px;height:45px;left:110px;bottom:174px;background: url("../images/main/title.png") no-repeat 0 50%;}
 /*.logo .fingerM {position: absolute;left:183px;bottom:-8px;}*/
 .logoWrap p {position:absolute;left:97px;top:430px;font-size:30px;color:#8d8d8d;font-weight:bold;}
 .sticker  {position:absolute;width:368px;height:368px;text-align:center;}

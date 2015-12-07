@@ -11,19 +11,18 @@ span {font-weight:bold;}
 .auto {width:1000px;margin:auto;}
 .auto:after {content:"";display:block;width:0;padding:0;overflow:hidden;clear:both;}
 
-/* header */
+/* main */
 #header {width:100%;height:50px;position: relative;font-size:15px;border-bottom:solid 1px #e8e8e8;}
 #gnb ul {float: left;}
 #gnb ul li {float: left;padding:10px 15px; }
 #gnb ul li a {color:#0088cc;text-decoration: none;}
 #gnb ul li:hover {border-bottom:solid 3px #0088cc;}
 
-#footer {width:100%;height:64px;padding:20px 0;border-top: solid 1px  #e8e8e8;}
+#footer {clear:both; position:relative; width:100%; overflow:hidden;padding:20px 0;border-top: solid 1px  #e8e8e8;}
 #footer .addWrap  {position:relative;width:450px;text-align:center;}
 #footer .addWrap address {display: block;font-style: normal;text-align:center;clear:both; }
 #footer .addWrap address .logo_f {position:absolute;width:32px;height:32px;left:213px;top:-4px;background-image: url(../images/layout/logo_f.png);}
 #footer .addWrap #copyright {font-weight: bold;padding-right:30px;}
-
 
 /*aboutMe*/
 #am_header {position:relative;width:100%;height:100px;}
