@@ -4,7 +4,7 @@ body {font-family:"Open Sans","Noto Sans KR","맑은 고딕","돋움","Dotum","s
 * {margin:0;padding:0;box-sizing:border-box;}
 a {color:#333;text-decoration:none;}
 a:hover {text-decoration: underline;}
-/*a img {vertical-align:top;}*/
+a img {border:0;}
 li {list-style:none;}
 span {font-weight:bold;}
 
